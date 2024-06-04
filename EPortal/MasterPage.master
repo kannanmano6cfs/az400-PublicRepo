@@ -1,0 +1,175 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="StyleSheet.css" />    
+    <style type="text/css">
+        #col3
+        {
+            background-color: #05C757;
+        }
+        ul#navmenu,ul.sub1,ul.sub2
+        {
+        	list-style-type: none;
+        	font-size: medium; 
+        	font-family: Cambria;
+        	font-weight: bold;       
+        }
+        
+        ul#navmenu li
+        {        	
+        	width: 130px;
+        	text-align: centre;
+        	position: relative;
+        	float: left;
+        	margin-right: 4px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        ul#navmenu a
+        {
+        	text-decoration: none;
+        	display: block;
+        	width: 130px;
+        	height: 25px;
+        	line-height: 23px;
+        	background-color: Teal;
+        	border: 1px ridge Lime;
+            color: #FFFFFF;
+        }
+        ul#navmenu .sub1 li
+        {
+        
+        }
+        ul#navmenu .sub1 a
+        {
+        	margin-top: 5px;
+        }
+        
+        ul#navmenu .sub2 a
+        {
+        	margin-left: 10px;
+        }
+        
+        ul#navmenu li:hover > a
+        {
+        	background-color: #FCF;
+        }
+        ul#navmenu li:hover a:hover
+        {
+        	background-color: #CFC;
+        }
+        ul#navmenu ul.sub1 
+        {
+        	display: none;
+        	position: absolute;
+        	top: 24px;
+        	left: 10px;
+        	text-align: left;
+        	text-indent: 4px;
+        }
+        ul#navmenu ul.sub2 
+        {
+        	display: none;
+        	position: absolute;
+        	top: 0px;
+        	left: 85px;        	
+        	text-align: left;
+        	text-indent: 4px;
+        }
+        ul#navmenu li:hover .sub1
+        {
+        	display: block;
+        	font-size: small;
+        	width: 160px;        	
+        }
+        
+        ul#navmenu .sub1 li:hover .sub2
+        {
+        	display: block;
+        	font-size: small;
+        	width: 160px;
+        }
+        .darrow        
+        {
+        	font-size: 10pt;
+        	position: absolute;
+        	top: 5px;
+        	right: 4px;
+        }
+        .rarrow        
+        {
+        	font-size: 13pt;
+        	position: absolute;
+        	top: 6px;
+            right: 4px;
+        }
+        .style1
+        {
+            font-weight: bold;
+            color: #006600;
+            background-color: #FFFFFF;
+        }
+        .style2
+        {
+            height: 23px;
+            background-color: #669999;
+            text-align: center;
+        }
+        .style3
+        {
+            height: 19px;
+        }
+        .style4
+        {
+            height: 131px;
+            background-color: #669999;
+        }
+        .style5
+        {
+            height: 364px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <table style="width: 100%; height: 636px; border: 0px none #66A3C4; white-space: normal; border-spacing: 0px; border-collapse: collapse;">
+        <tr>
+            <td colspan="3" class="style4">
+               <div id="col1" 
+                    style="border-width: 0px; background-color: #669999; text-align: center;">      
+                <asp:Image ID="Image1" runat="server" Height="171px" 
+            ImageUrl="~/new header.jpg" Width="1178px" />        
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="3" align="center"               
+                style="border-width: 0px; text-align: center;">
+                
+                </td>
+    </tr>
+    <tr>
+    <td colspan="3" class="style5">
+    <div id="col2">     
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td class="style3">
+    <div id="col3">
+    <center style="background-color: #669999"><span class="style1">&nbsp; Powered by Thivim Solutions, Kumbakonam&nbsp; </span></center> 
+    </div></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
